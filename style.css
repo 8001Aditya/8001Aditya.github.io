@@ -27,6 +27,15 @@ body {
   margin: auto;
   padding: 0 1rem;
 }
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: block;
+  border: 3px solid var(--primary);
+}
 
 /* Navbar */
 header {
