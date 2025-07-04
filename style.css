@@ -110,10 +110,11 @@ header {
 }
 .hero-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* keeps items aligned vertically */
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 2rem 0;
 }
 .hero-image {
   flex: 1;
@@ -159,7 +160,9 @@ header {
 .hero-text {
   flex: 2;
   min-width: 250px;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @keyframes float {
@@ -173,7 +176,9 @@ header {
   .hero-container {
     flex-direction: column;
     text-align: center;
+    padding: 1rem 0;
   }
+}
   .hero-text {
     text-align: center;
   }
