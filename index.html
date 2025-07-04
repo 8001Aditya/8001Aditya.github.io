@@ -6,85 +6,103 @@
   <title>Aditya Upadhyay | DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <h1>Aditya</h1>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><button id="theme-toggle">🌙</button></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">Aditya</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button></li>
+        </ul>
+        <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <section class="hero">
-    <h2>Hello, I'm</h2>
-    <h1>Aditya Upadhyay</h1>
-    <h3><span class="typing"></span></h3>
-    <p>Turning infrastructure chaos into automated elegance.</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="Aditya_Resume.docx" class="btn" download>Download Resume</a>
-    </div>
-  </section>
-
-  <section id="about" class="fade-in">
-    <h2>About Me</h2>
-    <p>
-      I am a DevOps Engineer with experience in AWS, Docker, Jenkins, Kubernetes, and Terraform. I automate scalable infrastructure and deliver high-performing applications.
-    </p>
-    <div class="socials">
-      <a href="https://github.com/8001Aditya" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/aditya-upadhyay-12a612210/" target="_blank">LinkedIn</a>
-    </div>
-  </section>
-
-  <section id="skills" class="fade-in">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg"/><span>AWS</span></div>
-      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/><span>Docker</span></div>
-      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"/><span>K8s</span></div>
-      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"/><span>Terraform</span></div>
-      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"/><span>Jenkins</span></div>
-      <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/><span>Linux</span></div>
-    </div>
-  </section>
-
-  <section id="projects" class="fade-in">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>DevOps Lifecycle</h3>
-        <p>Complete CI/CD project using Jenkins, Docker, Kubernetes.</p>
-        <a href="https://github.com/8001Aditya/DevOps" target="_blank">View on GitHub</a>
-      </div>
-      <div class="card">
-        <h3>AWS Infra Automation</h3>
-        <p>Terraform and Ansible used to deploy scalable AWS architecture.</p>
-        <a href="https://github.com/8001Aditya/AWS" target="_blank">View on GitHub</a>
+    <div class="container hero-content">
+      <h2>Hello, I'm</h2>
+      <h1>Aditya Upadhyay</h1>
+      <h3><span class="typing"></span></h3>
+      <p>Turning infrastructure chaos into automated elegance.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="Aditya_Resume.docx" class="btn" download>Download Resume</a>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="fade-in">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a DevOps Engineer with experience in AWS, Docker, Jenkins, Kubernetes, and Terraform. I automate scalable infrastructure and deliver high-performing applications.
+      </p>
+      <div class="socials">
+        <a href="https://github.com/8001Aditya" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/aditya-upadhyay-12a612210/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg"/><span>AWS</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"/><span>Docker</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"/><span>Kubernetes</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"/><span>Terraform</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"/><span>Jenkins</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"/><span>Linux</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>DevOps Lifecycle</h3>
+          <p>Complete CI/CD project using Jenkins, Docker, Kubernetes.</p>
+          <a href="https://github.com/8001Aditya/DevOps" target="_blank">View on GitHub</a>
+        </div>
+        <div class="card">
+          <h3>AWS Infra Automation</h3>
+          <p>Terraform and Ansible used to deploy scalable AWS architecture.</p>
+          <a href="https://github.com/8001Aditya/AWS" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Aditya Upadhyay. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Aditya Upadhyay. All rights reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
