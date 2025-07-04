@@ -117,22 +117,45 @@ header {
 }
 .hero-image {
   flex: 1;
-  min-width: 220px;
-  max-width: 300px;
+  min-width: 180px;
+  max-width: 220px;
+  position: relative;
   animation: float 4s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
 }
+
 .hero-image img {
   width: 100%;
-  border-radius: 50%;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border: 4px solid var(--btn-bg);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 0 10px rgba(255, 255, 255, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+  background: linear-gradient(to bottom right, #ffffff33, #ffffff11);
 }
+
+/* Image hover */
 .hero-image img:hover {
   transform: scale(1.05);
 }
 
+/* Reflection effect */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.3) 0%, transparent 80%);
+  filter: blur(10px);
+  transform: scaleY(-1);
+  opacity: 0.3;
+}
 .hero-text {
   flex: 2;
   min-width: 250px;
