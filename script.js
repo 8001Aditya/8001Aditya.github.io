@@ -1,5 +1,5 @@
 // Typing Animation
-const words = ["Cloud Engineer", "Devops engineer", "Docker Enthusiast", "Machine learning"];
+const words = ["Cloud Engineer", "Devops engineer", "Docker Enthusiast"];
 let i = 0, j = 0, current = "", isDeleting = false;
 const typing = document.querySelector(".typing");
 
